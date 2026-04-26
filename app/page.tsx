@@ -127,10 +127,10 @@ export default function Home() {
         >
           <div className="space-y-4">
             <motion.h1 
-              className="text-5xl md:text-[80px] font-semibold tracking-tight text-black leading-[1.05]"
+              className="text-4xl md:text-[80px] font-semibold tracking-tight text-black leading-[1.05]"
               variants={itemVariants}
             >
-              Empowering brands <br /> 
+              Empowering brands <br className="hidden md:block" /> 
               with visual excellence.
             </motion.h1>
             <motion.p 
@@ -164,7 +164,7 @@ export default function Home() {
         >
           <div className="container mx-auto max-w-7xl text-center space-y-16">
             <div className="space-y-4">
-              <h2 className="text-3xl md:text-5xl font-semibold text-black tracking-tight">Our Specialized Solutions.</h2>
+              <h2 className="text-3xl md:text-5xl font-semibold text-black tracking-tight">Our Specialized <br className="hidden md:block" /> Solutions.</h2>
               <p className="text-[#5f6368] text-sm md:text-base max-w-2xl mx-auto font-normal">
                 We build specialized platforms that help your business manage operations and grow faster.
               </p>
