@@ -7,7 +7,6 @@ import { ArrowRight } from 'lucide-react';
 export default function ProcessPage() {
   return (
     <div className="flex flex-col w-full min-h-screen bg-white font-sans text-[#202124]">
-      <Navbar />
       
       <main className="flex-1 pt-32 pb-24">
         <div className="container mx-auto px-6 max-w-7xl">

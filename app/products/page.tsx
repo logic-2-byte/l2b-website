@@ -84,7 +84,6 @@ export default function ProductsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
       />
-      <Navbar />
       
       <main className="flex-1 pt-32 pb-24">
         <div className="container mx-auto px-6 max-w-7xl">

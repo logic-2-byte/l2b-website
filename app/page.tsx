@@ -117,10 +117,8 @@ export default function Home() {
 
   return (
     <div className="flex flex-col w-full bg-white font-sans text-[#202124] overflow-x-hidden">
-      <Navbar />
-
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center pt-24 overflow-hidden">
+      <section className="relative min-h-[80vh] flex items-center justify-center pt-12 overflow-hidden">
         <motion.div 
           className="container mx-auto px-6 relative z-10 text-center space-y-8 max-w-5xl"
           variants={containerVariants}

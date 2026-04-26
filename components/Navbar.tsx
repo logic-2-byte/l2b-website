@@ -23,7 +23,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className={`fixed top-0 z-[100] w-full transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-xl border-b border-zinc-100 py-0' : 'bg-transparent py-2'}`}>
+    <header className={`sticky top-0 z-[100] w-full transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-xl border-b border-zinc-100' : 'bg-white'}`}>
       <div className="container mx-auto px-6 h-16 md:h-20 flex items-center justify-between max-w-7xl">
         {/* Left Actions / Logo */}
         <div className="flex items-center gap-12">

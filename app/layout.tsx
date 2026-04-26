@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PromoBar from "@/components/PromoBar";
 
 export const viewport: Viewport = {
   themeColor: "#d4c1ff",
@@ -95,6 +96,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans min-h-screen flex flex-col selection:bg-[#d4c1ff]/30 antialiased">
         <Navbar />
+        <PromoBar />
         <main className="flex-grow">
           {children}
         </main>
