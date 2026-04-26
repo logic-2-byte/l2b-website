@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Outfit', var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --color-brand: #d4c1ff; /* Lavender */
+  --color-brand-hover: #c4afff;
+  --color-background: #ffffff;
+  --color-foreground: #202124; /* Google Dark Gray */
+  --color-muted: #5f6368;
+  --color-border: #dadce0;
+  --color-panel: #f8f9fa;
+}
+
+@layer base {
+  *, ::before, ::after {
+    border-color: var(--color-border);
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .grid-bg {
+    background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+      linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+}
