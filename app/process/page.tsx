@@ -13,7 +13,7 @@ export default function ProcessPage() {
           {/* Header Section */}
           <div className="text-center space-y-4 mb-20">
             <span className="text-[13px] font-medium text-zinc-500 uppercase tracking-tight">Our Workflow</span>
-            <h1 className="text-5xl md:text-6xl font-semibold text-black tracking-tight leading-tight max-w-3xl mx-auto">
+            <h1 className="hero-title max-w-3xl mx-auto">
               Beyond brilliant <br /> from start to finish.
             </h1>
             <p className="text-sm md:text-base text-[#5f6368] max-w-lg mx-auto font-normal">
@@ -60,36 +60,83 @@ export default function ProcessPage() {
             </div>
           </div>
 
-          {/* Progress Bar Representation */}
-          <div className="mt-12 w-full h-[1px] bg-zinc-200 relative">
-            <div className="absolute top-0 left-0 w-1/4 h-full bg-[#d4c1ff]" />
-          </div>
+          {/* Timeline UI */}
+          <div className="mt-32 relative">
+            <div className="flex flex-col md:flex-row gap-12 md:gap-16 lg:gap-24 relative z-10 w-fit mx-auto">
+              
+              {/* Step 1 */}
+              <div className="relative pt-0 md:pt-24">
+                {/* Desktop Line - Extends to the next column across the gap */}
+                <div className="hidden md:block absolute top-[23px] left-[24px] md:w-[calc(100%+4rem)] lg:w-[calc(100%+6rem)] h-[2px] bg-[#d4c1ff] z-0" />
+                
+                {/* Desktop Circle Node */}
+                <div className="hidden md:flex absolute top-0 left-0 w-12 h-12 bg-white border-[3px] border-[#d4c1ff]/40 rounded-full items-center justify-center shadow-sm z-20">
+                  <div className="w-4 h-4 bg-[#d4c1ff] rounded-full" />
+                </div>
+                
+                {/* Mobile Line */}
+                <div className="md:hidden absolute top-6 left-[11px] w-[2px] h-[calc(100%+2rem)] bg-[#d4c1ff]" />
+                
+                {/* Mobile Circle Node */}
+                <div className="md:hidden absolute top-2 left-0 w-6 h-6 bg-white border-[3px] border-[#d4c1ff]/40 rounded-full shadow-sm flex items-center justify-center z-20">
+                   <div className="w-2 h-2 bg-[#d4c1ff] rounded-full" />
+                </div>
+                
+                <div className="pl-12 md:pl-0 space-y-6">
+                  <h4 className="text-[26px] font-semibold text-black tracking-tight">Discovery</h4>
+                  <ul className="space-y-4 text-[15px] font-normal text-[#5f6368]">
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> User of the Product</li>
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> Competitor & Market Analysis</li>
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> Business Goals</li>
+                  </ul>
+                </div>
+              </div>
 
-          {/* Detail List Section (Pixel style list) */}
-          <div className="mt-32 grid grid-cols-1 md:grid-cols-3 gap-16">
-            <div className="space-y-6">
-              <h4 className="text-xl font-semibold">Discovery</h4>
-              <ul className="space-y-3 text-sm font-normal text-[#5f6368]">
-                <li>User of the Product</li>
-                <li>Competitor & Market Analysis</li>
-                <li>Business Goals</li>
-              </ul>
-            </div>
-            <div className="space-y-6">
-              <h4 className="text-xl font-semibold">Design</h4>
-              <ul className="space-y-3 text-sm font-normal text-[#5f6368]">
-                <li>Ideation & Wireframe</li>
-                <li>Style Guide & Component Design</li>
-                <li>Visual Design & Prototype</li>
-              </ul>
-            </div>
-            <div className="space-y-6">
-              <h4 className="text-xl font-semibold">Build</h4>
-              <ul className="space-y-3 text-sm font-normal text-[#5f6368]">
-                <li>Frontend Development</li>
-                <li>Backend Development</li>
-                <li>Test & Publish</li>
-              </ul>
+              {/* Step 2 */}
+              <div className="relative pt-0 md:pt-24 mt-4 md:mt-0">
+                {/* Desktop Line - Extends to the next column across the gap */}
+                <div className="hidden md:block absolute top-[23px] left-[24px] md:w-[calc(100%+4rem)] lg:w-[calc(100%+6rem)] h-[2px] bg-[#d4c1ff] z-0" />
+                
+                <div className="hidden md:flex absolute top-0 left-0 w-12 h-12 bg-white border-[3px] border-[#d4c1ff]/40 rounded-full items-center justify-center shadow-sm z-20">
+                  <div className="w-4 h-4 bg-[#d4c1ff] rounded-full" />
+                </div>
+                
+                <div className="md:hidden absolute top-6 left-[11px] w-[2px] h-[calc(100%+2rem)] bg-[#d4c1ff]" />
+                <div className="md:hidden absolute top-2 left-0 w-6 h-6 bg-white border-[3px] border-[#d4c1ff]/40 rounded-full shadow-sm flex items-center justify-center z-20">
+                   <div className="w-2 h-2 bg-[#d4c1ff] rounded-full" />
+                </div>
+
+                <div className="pl-12 md:pl-0 space-y-6">
+                  <h4 className="text-[26px] font-semibold text-black tracking-tight">Design</h4>
+                  <ul className="space-y-4 text-[15px] font-normal text-[#5f6368]">
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> Ideation & Wireframe</li>
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> Style Guide & Component Design</li>
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> Visual Design & Prototype</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="relative pt-0 md:pt-24 mt-4 md:mt-0">
+                <div className="hidden md:flex absolute top-0 left-0 w-12 h-12 bg-white border-[3px] border-[#d4c1ff]/40 rounded-full items-center justify-center shadow-sm z-20">
+                  <div className="w-4 h-4 bg-[#d4c1ff] rounded-full" />
+                </div>
+                
+                {/* Mobile line - no continuation after the last */}
+                <div className="md:hidden absolute top-2 left-0 w-6 h-6 bg-white border-[3px] border-[#d4c1ff]/40 rounded-full shadow-sm flex items-center justify-center z-20">
+                   <div className="w-2 h-2 bg-[#d4c1ff] rounded-full" />
+                </div>
+
+                <div className="pl-12 md:pl-0 space-y-6">
+                  <h4 className="text-[26px] font-semibold text-black tracking-tight">Build</h4>
+                  <ul className="space-y-4 text-[15px] font-normal text-[#5f6368]">
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> Frontend Development</li>
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> Backend Development</li>
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> Test & Publish</li>
+                  </ul>
+                </div>
+              </div>
+
             </div>
           </div>
 

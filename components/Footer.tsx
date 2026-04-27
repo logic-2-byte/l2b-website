@@ -59,8 +59,8 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Logic2byte. All rights reserved.
           </p>
           <div className="flex gap-8 text-[13px] text-[#5f6368] font-normal order-1 md:order-2">
-            <Link href="#" className="hover:text-black transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-black transition-colors">Terms of Service</Link>
+            <Link href="/privacy" className="hover:text-black transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-black transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

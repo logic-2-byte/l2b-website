@@ -90,7 +90,7 @@ export default function ProductsPage() {
           {/* Header Section */}
           <div className="text-center space-y-4 mb-20">
             <span className="text-[13px] font-medium text-zinc-500 uppercase tracking-tight">Our Ecosystem</span>
-            <h1 className="text-4xl md:text-6xl font-semibold text-black tracking-tight leading-tight max-w-3xl mx-auto">
+            <h1 className="hero-title max-w-3xl mx-auto">
               Specialized products <br className="hidden md:block" /> for every business.
             </h1>
             <p className="text-sm md:text-base text-[#5f6368] max-w-lg mx-auto font-normal">
