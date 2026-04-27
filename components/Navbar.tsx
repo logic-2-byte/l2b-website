@@ -49,18 +49,18 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <Link 
             href="https://app.logic2byte.com" 
-            className="hidden sm:inline-flex bg-black text-white hover:bg-[var(--btn-hover)] transition-all px-6 py-2 rounded-full text-[13px] font-bold shadow-xl shadow-black/5"
+            className="inline-flex bg-black text-white hover:bg-zinc-800 transition-all px-4 sm:px-6 py-2 rounded-full text-[12px] sm:text-[13px] font-bold shadow-xl shadow-black/5"
           >
             Get Started
           </Link>
 
           {/* Mobile Menu Toggle */}
           <button 
-            className="md:hidden w-10 h-10 flex items-center justify-center text-black bg-zinc-50 rounded-full"
+            className="md:hidden w-10 h-10 p-0 border-none flex items-center justify-center text-black bg-zinc-50 hover:bg-zinc-100 rounded-full shrink-0 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
-            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {isOpen ? <X className="w-5 h-5 text-black" /> : <Menu className="w-5 h-5 text-black" />}
           </button>
         </div>
       </div>

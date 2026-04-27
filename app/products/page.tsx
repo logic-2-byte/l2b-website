@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function ProductsPage() {
@@ -93,9 +93,14 @@ export default function ProductsPage() {
             <h1 className="hero-title max-w-3xl mx-auto">
               Specialized products <br className="hidden md:block" /> for every business.
             </h1>
-            <p className="text-sm md:text-base text-[#5f6368] max-w-lg mx-auto font-normal">
-              Powerful management solutions starting from <span className="font-bold text-black">₹599 monthly</span> only.
-            </p>
+            <div className="flex justify-center pt-2 px-4">
+              <div className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2.5 rounded-full bg-[#faf5ff] border border-[#d4c1ff]/50 hover:bg-[#f3e8ff] transition-all group cursor-pointer shadow-sm text-center">
+                <span className="text-[12.5px] sm:text-[15px] text-[#4b5563] font-medium tracking-tight leading-snug">
+                  <span className="font-medium text-[#111827]">Powerful management solutions</span> starting from ₹599 monthly only.
+                </span>
+                <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-[#8b5cf6] group-hover:translate-x-0.5 transition-transform shrink-0" />
+              </div>
+            </div>
           </div>
 
           {/* Product Grid - Compact Action Bar Style */}
