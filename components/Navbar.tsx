@@ -24,11 +24,14 @@ export default function Navbar() {
 
   return (
     <header className={`sticky top-0 z-[100] w-full transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-xl border-b border-zinc-100' : 'bg-transparent'}`}>
-      <div className="w-full max-w-7xl mx-auto flex items-center justify-between py-4 px-6 md:px-8">
+      <div className="w-full max-w-7xl mx-auto flex items-center justify-between py-2 md:py-3 px-4 sm:px-6 md:px-8">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group" onClick={() => setIsOpen(false)}>
-          <div className="w-5 h-5 bg-[#d4c1ff] rounded-full shadow-lg shadow-purple-200 group-hover:scale-110 transition-transform" />
-          <span className="font-bold text-xl tracking-tight text-black">Logic2byte</span>
+        <Link href="/" className="flex items-center gap-2 group shrink-0" onClick={() => setIsOpen(false)}>
+          <img 
+            src="/l2blogo.png?v=2" 
+            alt="Logic2byte Logo" 
+            className="h-10 md:h-13 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Navigation Links - Center */}
@@ -46,12 +49,18 @@ export default function Navbar() {
         </nav>
 
         {/* Right Actions */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <Link 
             href="https://app.logic2byte.com" 
-            className="inline-flex bg-black text-white hover:bg-zinc-800 transition-all px-4 sm:px-6 py-2 rounded-full text-[12px] sm:text-[13px] font-bold shadow-xl shadow-black/5"
+            className="hidden sm:inline-flex text-[14px] font-bold text-zinc-600 hover:text-black transition-colors px-4 py-2"
           >
-            Get Started
+            Sign In
+          </Link>
+          <Link 
+            href="/contact?subject=Enterprise%20Registration" 
+            className="inline-flex bg-black text-white hover:bg-zinc-800 transition-all px-5 sm:px-6 py-2 rounded-full text-[12px] sm:text-[14px] font-bold shadow-xl shadow-black/5 whitespace-nowrap"
+          >
+            Sign Up
           </Link>
 
           {/* Mobile Menu Toggle */}
@@ -89,13 +98,20 @@ export default function Navbar() {
                   </div>
                 </Link>
               ))}
-              <div className="pt-8">
+              <div className="pt-8 flex flex-col gap-4">
                 <Link 
                   href="https://app.logic2byte.com" 
+                  className="flex items-center justify-center w-full bg-zinc-50 text-black py-4 rounded-full font-bold text-lg border border-zinc-100"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Sign In
+                </Link>
+                <Link 
+                  href="/contact?subject=Enterprise%20Registration" 
                   className="flex items-center justify-center w-full bg-black text-white py-5 rounded-full font-bold text-lg shadow-xl"
                   onClick={() => setIsOpen(false)}
                 >
-                  Get Started
+                  Sign Up
                 </Link>
               </div>
             </nav>

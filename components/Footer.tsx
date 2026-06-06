@@ -9,8 +9,12 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8 mb-16">
           {/* Brand Column - Full width on mobile */}
           <div className="col-span-full md:col-span-1 space-y-6">
-            <Link href="/" className="flex items-center gap-1">
-              <div className="w-5 h-5 bg-[#d4c1ff] rounded-full" />
+            <Link href="/" className="flex items-center gap-2">
+              <img 
+                src="/l2blogo.png?v=2" 
+                alt="Logic2byte Logo" 
+                className="h-8 w-auto object-contain"
+              />
               <span className="font-semibold text-xl tracking-tight text-[#5f6368]">Logic2byte</span>
             </Link>
             <p className="text-[#5f6368] text-sm leading-relaxed font-normal max-w-sm">
@@ -34,7 +38,7 @@ export default function Footer() {
             <h4 className="text-[12px] font-bold text-black uppercase tracking-tight">Product</h4>
             <ul className="space-y-4 text-sm text-[#5f6368] font-normal">
               <li><Link href="https://app.logic2byte.com" className="hover:text-black transition-colors">Login</Link></li>
-              <li><Link href="https://app.logic2byte.com" className="hover:text-black transition-colors">Get Started</Link></li>
+              <li><Link href="/contact?subject=Enterprise%20Registration" className="hover:text-black transition-colors">Get Started</Link></li>
               <li><Link href="/products" className="hover:text-black transition-colors">E-commerce</Link></li>
             </ul>
           </div>
