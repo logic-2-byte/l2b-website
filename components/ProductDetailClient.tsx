@@ -15,6 +15,7 @@ interface Plan {
   durationMonths: number;
   features: string[];
   products: number[];
+  code: string;
 }
 
 interface Product {
