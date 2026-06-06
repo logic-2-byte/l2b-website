@@ -77,8 +77,31 @@ export default function ProductDetailClient({ slug }: { slug: string }) {
     notFound();
   }
 
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": product.name,
+    "description": product.description,
+    "image": "https://logic2byte.com/l2blogo.png",
+    "brand": {
+      "@type": "Brand",
+      "name": "Logic2byte"
+    },
+    "offers": plans.length > 0 ? {
+      "@type": "AggregateOffer",
+      "priceCurrency": "INR",
+      "lowPrice": Math.min(...plans.map(p => p.price)),
+      "highPrice": Math.max(...plans.map(p => p.price)),
+      "offerCount": plans.length
+    } : undefined
+  };
+
   return (
     <div className="flex flex-col w-full min-h-screen bg-white font-sans text-[#202124]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
       <PricingScrollHandler />
       <main className="flex-1 pt-32 pb-24">
         <div className="container mx-auto px-6 max-w-7xl">

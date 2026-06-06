@@ -1,8 +1,22 @@
 import type { Metadata, Viewport } from "next";
+import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PromoBarWrapper from "@/components/PromoBarWrapper";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  display: "swap",
+});
+
 
 export const viewport: Viewport = {
   themeColor: "#d4c1ff",
@@ -104,7 +118,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-sans min-h-screen flex flex-col selection:bg-[#d4c1ff]/30 antialiased">
+      <body className={`${inter.variable} ${outfit.variable} font-sans min-h-screen flex flex-col selection:bg-[#d4c1ff]/30 antialiased`}>
         <Navbar />
         <PromoBarWrapper />
         <main className="flex-grow">

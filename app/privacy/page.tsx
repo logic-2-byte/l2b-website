@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Read the Privacy Policy of Logic2byte to understand how we protect your personal details and manage data processing.",
+};
+
 export default function PrivacyPolicy() {
   return (
     <div className="flex flex-col w-full bg-white font-sans text-[#202124] overflow-x-hidden min-h-screen">

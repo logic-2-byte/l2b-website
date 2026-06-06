@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700&family=Work+Sans:wght@400;600;700&display=swap');
-
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Outfit', var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-outfit), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --color-brand: #d4c1ff; /* Lavender */
   --color-brand-hover: #c4afff;
   --color-background: #ffffff;
@@ -30,7 +28,7 @@
     color: var(--color-foreground);
     @apply antialiased;
     zoom: 1;
-    font-family: Inter, work-sans, Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+    font-family: var(--font-sans) !important;
     letter-spacing: -0.03em;
   }
   
@@ -39,7 +37,7 @@
     tab-size: 4;
     font-feature-settings: normal;
     line-height: inherit;
-    font-family: Inter, work-sans, Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+    font-family: var(--font-sans) !important;
     -webkit-font-smoothing: antialiased;
     letter-spacing: -0.03em;
     text-decoration: inherit;
@@ -89,7 +87,7 @@
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
     font-feature-settings: normal;
-    font-family: Inter, work-sans, Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+    font-family: var(--font-sans) !important;
     -webkit-font-smoothing: antialiased;
     text-align: center;
     font-size: clamp(2.25rem, 5vw + 1rem, 75px);
@@ -106,7 +104,7 @@
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
     font-feature-settings: normal;
-    font-family: Inter, work-sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
+    font-family: var(--font-sans) !important;
     -webkit-font-smoothing: antialiased;
     letter-spacing: -0.03em;
     text-align: center;

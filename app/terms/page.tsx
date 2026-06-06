@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description: "Read the Terms of Service of Logic2byte governing your use of our software systems, subscriptions, and bespoke digital platforms.",
+};
+
 export default function TermsOfService() {
   return (
     <div className="flex flex-col w-full bg-white font-sans text-[#202124] overflow-x-hidden min-h-screen">
