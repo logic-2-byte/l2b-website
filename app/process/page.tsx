@@ -85,9 +85,9 @@ export default function ProcessPage() {
                 <div className="pl-12 md:pl-0 space-y-6">
                   <h4 className="text-[26px] font-semibold text-black tracking-tight">Discovery</h4>
                   <ul className="space-y-4 text-[15px] font-normal text-[#5f6368]">
-                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> User of the Product</li>
-                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> Competitor & Market Analysis</li>
-                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> Business Goals</li>
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#6d28d9] shrink-0"/> User of the Product</li>
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#6d28d9] shrink-0"/> Competitor & Market Analysis</li>
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#6d28d9] shrink-0"/> Business Goals</li>
                   </ul>
                 </div>
               </div>
@@ -109,9 +109,9 @@ export default function ProcessPage() {
                 <div className="pl-12 md:pl-0 space-y-6">
                   <h4 className="text-[26px] font-semibold text-black tracking-tight">Design</h4>
                   <ul className="space-y-4 text-[15px] font-normal text-[#5f6368]">
-                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> Ideation & Wireframe</li>
-                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> Style Guide & Component Design</li>
-                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> Visual Design & Prototype</li>
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#6d28d9] shrink-0"/> Ideation & Wireframe</li>
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#6d28d9] shrink-0"/> Style Guide & Component Design</li>
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#6d28d9] shrink-0"/> Visual Design & Prototype</li>
                   </ul>
                 </div>
               </div>
@@ -130,9 +130,9 @@ export default function ProcessPage() {
                 <div className="pl-12 md:pl-0 space-y-6">
                   <h4 className="text-[26px] font-semibold text-black tracking-tight">Build</h4>
                   <ul className="space-y-4 text-[15px] font-normal text-[#5f6368]">
-                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> Frontend Development</li>
-                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> Backend Development</li>
-                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#d4c1ff] shrink-0"/> Test & Publish</li>
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#6d28d9] shrink-0"/> Frontend Development</li>
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#6d28d9] shrink-0"/> Backend Development</li>
+                    <li className="flex items-center gap-3"><ArrowRight className="w-4 h-4 text-[#6d28d9] shrink-0"/> Test & Publish</li>
                   </ul>
                 </div>
               </div>

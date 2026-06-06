@@ -30,13 +30,16 @@ function TypingText({ text, className }: { text: string; className?: string }) {
 
   return (
     <h2 ref={ref} className={className}>
-      {displayedText}
-      <motion.span
-        animate={{ opacity: [1, 0] }}
-        transition={{ duration: 0.8, repeat: Infinity, ease: "linear" }}
-        className="inline-block w-[3px] h-[1em] bg-[#d4c1ff] ml-1 align-middle"
-        style={{ display: isComplete ? "none" : "inline-block" }}
-      />
+      <span className="sr-only">{text}</span>
+      <span aria-hidden="true">
+        {displayedText}
+        <motion.span
+          animate={{ opacity: [1, 0] }}
+          transition={{ duration: 0.8, repeat: Infinity, ease: "linear" }}
+          className="inline-block w-[3px] h-[1em] bg-[#d4c1ff] ml-1 align-middle"
+          style={{ display: isComplete ? "none" : "inline-block" }}
+        />
+      </span>
     </h2>
   );
 }
@@ -120,31 +123,28 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[calc(100dvh-120px)] flex items-center justify-center pt-8 overflow-hidden bg-white">
 
-        <motion.div
+        <div
           className="container mx-auto px-6 relative z-10 text-center space-y-8 max-w-7xl"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
         >
           <div className="space-y-4">
-            <motion.h1
+            <h1
               className="hero-title"
-              variants={itemVariants}
             >
               <span className="glass-underline">Empowering</span> Brands <br className="hidden md:block" />
               with Visual Excellence.
-            </motion.h1>
-            <motion.p
+            </h1>
+            <p
               className="hero-description text-[#5f6368] max-w-2xl mx-auto"
-              variants={itemVariants}
             >
               Delivering fully functional websites, mobile apps, and eCommerce platforms designed to help your business thrive.
-            </motion.p>
+            </p>
           </div>
 
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12 w-full max-w-7xl mx-auto"
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12 w-full max-w-7xl mx-auto text-left"
             variants={itemVariants}
+            initial="hidden"
+            animate="visible"
           >
             {/* Card 1 & 2 Combined: Ecommerce Solutions */}
             <div className="md:col-span-2 bg-[#f0f4ff] rounded-[2.5rem] overflow-hidden group transition-transform hover:-translate-y-1 duration-500 flex flex-col h-auto md:h-[580px]">
@@ -271,7 +271,7 @@ export default function Home() {
               </div>
             </div>
           </motion.div>
-        </motion.div>
+        </div>
       </section>
 
       {/* Solutions Section */}
@@ -325,7 +325,7 @@ export default function Home() {
                 </div>
                 <div className="flex-1 w-full mt-10 relative flex items-end justify-center">
                   <div className="w-[85%] h-[90%] rounded-t-3xl overflow-hidden shadow-2xl border-t border-x border-white/60">
-                    <img src="https://images.unsplash.com/photo-1517245318773-b7b71a162f33?q=80&w=1000&auto=format&fit=crop" className="w-full h-full object-cover" alt="Process" />
+                    <img src="/images/yoga_training.webp" className="w-full h-full object-cover" alt="Yoga & Dance Studio Preview" />
                   </div>
                 </div>
               </div>
@@ -422,7 +422,7 @@ export default function Home() {
                     {item.desc}
                   </p>
                 </div>
-                <Link href={`/contact?service=${item.slug}`} className="inline-flex items-center text-[#8b5cf6] font-semibold text-[15px] group-hover:text-[#7c3aed] transition-colors">
+                <Link href={`/contact?service=${item.slug}`} className="inline-flex items-center text-[#6d28d9] font-semibold text-[15px] group-hover:text-[#5b21b6] transition-colors">
                   {item.link} <ChevronRight className="w-4 h-4 ml-0.5" />
                 </Link>
               </div>
@@ -476,13 +476,13 @@ export default function Home() {
           </div>
           <div className="lg:w-1/3 space-y-12 lg:pt-20">
             <div className="space-y-4 text-left">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#d4c1ff]">Our Purpose</span>
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#6d28d9]">Our Purpose</span>
               <p className="text-[#5f6368] text-lg leading-relaxed font-normal">
                 Making premium digital solutions accessible and affordable for every business, regardless of size.
               </p>
             </div>
             <div className="space-y-4 text-left">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#d4c1ff]">Our Mission</span>
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#6d28d9]">Our Mission</span>
               <p className="text-[#5f6368] text-lg leading-relaxed font-normal">
                 To bridge the gap between complex technology and business goals through exceptional design.
               </p>

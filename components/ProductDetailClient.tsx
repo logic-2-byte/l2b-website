@@ -68,7 +68,7 @@ export default function ProductDetailClient({ slug }: { slug: string }) {
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen">
-        <Loader2 className="w-8 h-8 animate-spin text-[#d4c1ff]" />
+        <Loader2 className="w-8 h-8 animate-spin text-[#6d28d9]" />
       </div>
     );
   }
@@ -134,11 +134,11 @@ export default function ProductDetailClient({ slug }: { slug: string }) {
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                   <div className="flex items-center gap-3 text-sm font-medium text-black">
-                    <CheckCircle2 className="w-5 h-5 text-[#8b5cf6]" />
+                    <CheckCircle2 className="w-5 h-5 text-[#6d28d9]" />
                     <span>Real-time Attendance</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm font-medium text-black">
-                    <CheckCircle2 className="w-5 h-5 text-[#8b5cf6]" />
+                    <CheckCircle2 className="w-5 h-5 text-[#6d28d9]" />
                     <span>Automatic Entry Block</span>
                   </div>
                 </div>
@@ -186,7 +186,7 @@ export default function ProductDetailClient({ slug }: { slug: string }) {
                   <div className="space-y-6 mb-8">
                     <div className="flex items-center justify-between">
                       <h3 className="text-xl font-bold text-black">{plan.name}</h3>
-                      <div className={`p-2 rounded-lg ${plan.price > 0 ? 'bg-[#d4c1ff]/20 text-[#8b5cf6]' : 'bg-zinc-100 text-zinc-400'}`}>
+                      <div className={`p-2 rounded-lg ${plan.price > 0 ? 'bg-[#d4c1ff]/20 text-[#6d28d9]' : 'bg-zinc-100 text-zinc-400'}`}>
                         {plan.price > 0 ? <Zap className="w-5 h-5" /> : <Shield className="w-5 h-5" />}
                       </div>
                     </div>
@@ -199,7 +199,7 @@ export default function ProductDetailClient({ slug }: { slug: string }) {
                     <ul className="space-y-4">
                       {plan.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start gap-3 text-sm text-[#5f6368]">
-                          <CheckCircle2 className="w-5 h-5 text-[#8b5cf6] shrink-0" />
+                          <CheckCircle2 className="w-5 h-5 text-[#6d28d9] shrink-0" />
                           <span>{feature}</span>
                         </li>
                       ))}
@@ -230,7 +230,7 @@ export default function ProductDetailClient({ slug }: { slug: string }) {
                   <h3 className="text-lg font-bold text-black">Enterprise Solution</h3>
                   <p className="text-sm text-[#5f6368]">Need custom features or white-labeling? Let's talk.</p>
                 </div>
-                <Link href="/#contact" className="text-sm font-bold text-[#8b5cf6] hover:underline">
+                <Link href="/#contact" className="text-sm font-bold text-[#6d28d9] hover:underline">
                   Contact Sales
                 </Link>
               </div>
