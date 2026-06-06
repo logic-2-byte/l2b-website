@@ -161,7 +161,7 @@ export default function Home() {
                     Request Demo
                   </a>
                   <Link href="/products/ecommerce-erp-system" className="bg-white/50 border border-black/10 backdrop-blur-sm rounded-full px-10 py-3 text-[14px] font-bold text-black hover:bg-black hover:text-white transition-all">
-                    Learn More
+                    Learn More<span className="sr-only"> about our Ecommerce ERP system</span>
                   </Link>
                 </div>
               </div>
@@ -207,7 +207,7 @@ export default function Home() {
                     Request Demo
                   </a>
                   <Link href="/products/gym-management-system" className="bg-white/50 border border-black/10 backdrop-blur-sm rounded-full px-8 py-2 text-[13px] font-bold text-black hover:bg-black hover:text-white transition-all">
-                    Learn more
+                    Learn more<span className="sr-only"> about our gym management system ERP</span>
                   </Link>
                 </div>
               </div>
@@ -300,7 +300,7 @@ export default function Home() {
                     Automated subscription billing, attendance sync, WhatsApp alerts, and hardware-integrated access control.
                   </p>
                   <Link href="/products/gym-management-system" className="inline-block mt-2 border border-black rounded-full px-6 py-1.5 text-[14px] font-medium text-black hover:bg-black hover:text-white transition-all">
-                    Learn more
+                    Learn more<span className="sr-only"> about our Gym & Fitness ERP</span>
                   </Link>
                 </div>
                 <div className="flex-1 w-full mt-10 relative flex items-end justify-center px-8">
@@ -320,7 +320,7 @@ export default function Home() {
                     Manage session scheduling, batch allocation, trainer slots, and automated client renewal processes.
                   </p>
                   <Link href="/products/yoga-studio-management" className="inline-block mt-2 border border-black rounded-full px-6 py-1.5 text-[14px] font-medium text-black hover:bg-black hover:text-white transition-all">
-                    Learn more
+                    Learn more<span className="sr-only"> about Yoga & Dance Studio management</span>
                   </Link>
                 </div>
                 <div className="flex-1 w-full mt-10 relative flex items-end justify-center">
@@ -340,7 +340,7 @@ export default function Home() {
                     Dynamic ground slot bookings, hourly rentals, school admissions, fees collections, and administrative ERPs.
                   </p>
                   <Link href="/products/turf-booking-system" className="inline-block mt-2 border border-black rounded-full px-6 py-1.5 text-[14px] font-medium text-black hover:bg-black hover:text-white transition-all">
-                    Learn more
+                    Learn more<span className="sr-only"> about Turf Arena & School subscription systems</span>
                   </Link>
                 </div>
                 <div className="flex-1 w-full mt-10 relative flex items-end justify-center px-8">

@@ -196,7 +196,7 @@ export default async function ProductsPage() {
                             href={`/products/${slug}`}
                             className="flex-1 border border-black/20 bg-white/50 backdrop-blur-sm rounded-full px-6 py-2.5 text-[14px] font-bold text-black hover:bg-white transition-all flex items-center justify-center gap-1.5"
                           >
-                            Learn more <ChevronRight className="w-4 h-4" />
+                            Learn more <span className="sr-only"> about {product.name}</span> <ChevronRight className="w-4 h-4" />
                           </Link>
                         </div>
                         <Link
