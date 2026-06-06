@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next';
 import { MARKETPLACE_DATA } from '@/lib/data';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://logic2byte.com';
   
